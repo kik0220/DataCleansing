@@ -1,2 +1,5 @@
 venv/
 test*
+*.txt
+*.json
+models

@@ -1,1 +1,6 @@
 gradio
+transformers
+accelerate
+sentencepiece
+einops
+protobuf==3.20.*
