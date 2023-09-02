@@ -23,8 +23,12 @@ model = AutoModelForCausalLM.from_pretrained("matsuo-lab/weblab-10b-instruction-
 # model = AutoModelForCausalLM.from_pretrained("rinna/japanese-gpt-neox-3.6b-instruction-sft-v2",cache_dir="models")
 # tokenizer = AutoTokenizer.from_pretrained("cyberagent/open-calm-7b",cache_dir="models")
 # model = AutoModelForCausalLM.from_pretrained("cyberagent/open-calm-7b", device_map="auto", torch_dtype=torch.float16,cache_dir="models")
-# tokenizer = AutoTokenizer.from_pretrained("elyza/elyza/ELYZA-japanese-Llama-2-7b",cache_dir="models")
-# model = AutoModelForCausalLM.from_pretrained("elyza/elyza/ELYZA-japanese-Llama-2-7b", torch_dtype="auto",cache_dir="models")
+# tokenizer = AutoTokenizer.from_pretrained("elyza/ELYZA-japanese-Llama-2-7b",cache_dir="models")
+# model = AutoModelForCausalLM.from_pretrained("elyza/ELYZA-japanese-Llama-2-7b", torch_dtype="auto",cache_dir="models")
+# tokenizer = AutoTokenizer.from_pretrained("elyza/ELYZA-japanese-Llama-2-7b-fast-instruct",use_fast=True,cache_dir="models")
+# model = AutoModelForCausalLM.from_pretrained("elyza/ELYZA-japanese-Llama-2-7b-fast-instruct",torch_dtype="auto",cache_dir="models")
+# tokenizer = AutoTokenizer.from_pretrained("line-corporation/japanese-large-lm-1.7b-instruction-sft",legacy=True,cache_dir="models")
+# model = AutoModelForCausalLM.from_pretrained("line-corporation/japanese-large-lm-1.7b-instruction-sft",torch_dtype="auto",cache_dir="models")
 # B_INST, E_INST = "[INST]", "[/INST]"
 # B_SYS, E_SYS = "<<SYS>>\n", "\n<</SYS>>\n\n"
 DEFAULT_SYSTEM_PROMPT = "次の文章は女性の台詞です。32文字程度で要約を出力しなさい。"
